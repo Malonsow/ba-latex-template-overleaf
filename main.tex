@@ -1,5 +1,7 @@
 \documentclass[first=firstname,last=lastname,company=comp,location=Dresden,simple]{baarticle}
 
+\addbibresource{ba-latex-template/document.bib}
+
 \begin{document}
     \begin{basimple}[
         img=./img/ba_dresden_logo.png,
@@ -11,7 +13,8 @@
         returndate=\today,
         signature=./img/ba_dresden_logo.png,
         location=Dresden,
-        type=thesis
+        type=thesis,
+        blocknotice=true
     ]
         \section{Caption}
         Here is the content of paper.
