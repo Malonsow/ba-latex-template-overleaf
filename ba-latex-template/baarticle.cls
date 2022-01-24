@@ -1,11 +1,12 @@
 % Document class implementing the BA Dresden Styleguide
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
-\ProvidesClass{baarticle}[2021/06/11 v0.4]
+\ProvidesClass{baarticle}[2021/09/24 v1.0.0]
 
 % Process package options
 \RequirePackage{xkeyval} % for key value processing
 \RequirePackage{etoolbox} % for csdef, csundef, ifdefempty, toggles, etc ...
 \newtoggle{baclssimple} % toggles are false per default
+\newtoggle{baclslinkcoloring} % toggles are false per default
 
 % first name of the author
 \DeclareOptionX[BA]{first}{\def\@baclsfirst{#1}}
@@ -17,6 +18,8 @@
 \DeclareOptionX[BA]{location}{\def\@baclslocation{#1}}
 % if specified the class will load additional packages and provide the basimple environment, which simplifies the setup
 \DeclareOptionX[BA]{simple}[usesimple]{\toggletrue{baclssimple}}
+% if specified links will be colored
+\DeclareOptionX[BA]{linkcoloring}[uselinkcoloring]{\toggletrue{baclslinkcoloring}}
 
 \DeclareOptionX*{\PassOptionsToClass{\CurrentOption}{article}}
 \ProcessOptionsX[BA]\relax
@@ -50,6 +53,18 @@
     \RequirePackage[style=baarticle]{biblatex}
     \RequirePackage{hyperref}
     \RequirePackage[style=alttree,nogroupskip,nonumberlist,nopostdot,nolong,nosuper,nolist]{glossaries}
+    
+    \iftoggle{baclslinkcoloring}{
+        % hyperref config
+        \hypersetup{
+            colorlinks=true,
+            linkcolor=blue,
+            filecolor=magenta,      
+            urlcolor=cyan,
+        }
+    } {
+        % no coloring required, do nothing
+    }
 } {
     % not in simple, do nothing
 }
