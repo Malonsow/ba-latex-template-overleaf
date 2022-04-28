@@ -8,5 +8,10 @@ Ladet einfach eine Zip dieses Repositories runter und bei Overleaf dann mit *Pro
 
 In der [Dokumentation](https://nuckal777.github.io/ba-latex-template/) ist beschrieben, wie das Template zu benutzen ist.
 
+## BA-Logo einfügen
+
+Das BA-Logo kann auf der [Website der BA Dresden](https://www.ba-dresden.de/fileadmin/dresden/die-akademie/logos/Dresden_RGB_Screen.png) heruntergeladen und im Ordner *img* eingefügt werden. Die [Nutzungsbedingungen der Logos der Berufsakademie Sachsen](https://www.ba-sachsen.de/fileadmin/sachsen/presse/Nutzungsbedingungen_Logos_BA_Sachsen.pdf) sind dabei eigenverantwortlich einzuhalten.
+
 ## Aktuelle Version
-Diese Repository nutzt die Version `v1.0` von [ba-latex-template](https://github.com/Nuckal777/ba-latex-template).
+
+Dieses Repository nutzt die Version `v1.0` von [ba-latex-template](https://github.com/Nuckal777/ba-latex-template).
