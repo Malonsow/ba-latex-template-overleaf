@@ -1,6 +1,6 @@
 # BA Template für Overleaf
 
-Dieses Template ist eine Erweiterung zu [Nuckal777/ba-latex-template](https://github.com/Nuckal777/ba-latex-template) in Fortführung des Repos [n3rdc4ptn/ba-latex-template-overleaf](https://github.com/n3rdc4ptn/ba-latex-template-overleaf).
+Dieses Template ist eine Erweiterung zu [Nuckal777/ba-latex-template](https://github.com/Nuckal777/ba-latex-template) in Fortführung des Repos [n3rdc4ptn/ba-latex-template-overleaf](https://github.com/n3rdc4ptn/ba-latex-template-overleaf). Die Nutzung erfolgt auf eigenes Risiko.
 
 Damit lässt sich das Template einfach in Overleaf einbinden und nutzen. Es kann sowohl die [Overleaf-Website](https://de.overleaf.com/) als auch ein [selbstgehostetes Overleaf](https://github.com/overleaf/overleaf) verwendet werden.
 
